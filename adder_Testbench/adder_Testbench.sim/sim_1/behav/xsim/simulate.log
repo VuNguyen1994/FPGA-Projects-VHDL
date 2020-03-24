@@ -1,0 +1,11 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Error: incorrect result
+Time: 250 ns  Iteration: 0  Process: /adder_test_bench/line__70  File: D:/DrexelStudy/ECE302/adder_Testbench/adder_Testbench.srcs/sources_1/new/adder_test_bench.vhd
+Error: incorrect result
+Time: 550 ns  Iteration: 0  Process: /adder_test_bench/line__70  File: D:/DrexelStudy/ECE302/adder_Testbench/adder_Testbench.srcs/sources_1/new/adder_test_bench.vhd
+Error: incorrect result
+Time: 850 ns  Iteration: 0  Process: /adder_test_bench/line__70  File: D:/DrexelStudy/ECE302/adder_Testbench/adder_Testbench.srcs/sources_1/new/adder_test_bench.vhd
+Failure: test completed
+Time: 850 ns  Iteration: 0  Process: /adder_test_bench/line__70  File: D:/DrexelStudy/ECE302/adder_Testbench/adder_Testbench.srcs/sources_1/new/adder_test_bench.vhd
+$finish called at time : 850 ns : File "D:/DrexelStudy/ECE302/adder_Testbench/adder_Testbench.srcs/sources_1/new/adder_test_bench.vhd" Line 88

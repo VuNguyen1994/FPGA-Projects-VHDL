@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 22 16:09:13 2019
+# Process ID: 7376
+# Current directory: D:/DrexelStudy/ECE302/adder_Testbench
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12124 D:\DrexelStudy\ECE302\adder_Testbench\adder_Testbench.xpr
+# Log file: D:/DrexelStudy/ECE302/adder_Testbench/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/adder_Testbench\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/adder_Testbench/adder_Testbench.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source adder_test_bench.tcl
+close_sim
+launch_simulation
+source adder_test_bench.tcl
+close_sim

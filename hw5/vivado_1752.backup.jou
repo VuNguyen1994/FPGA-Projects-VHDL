@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 31 01:58:33 2019
+# Process ID: 1752
+# Current directory: D:/DrexelStudy/ECE302/hw5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5912 D:\DrexelStudy\ECE302\hw5\hw5.xpr
+# Log file: D:/DrexelStudy/ECE302/hw5/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/hw5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/hw5/hw5.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source twos_C_system.tcl
+restart
+add_force {/twos_C_system/x} -radix hex {01 0ns}
+add_force {/twos_C_system/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/twos_C_system/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+add_force {/twos_C_system/go} -radix hex {1 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim

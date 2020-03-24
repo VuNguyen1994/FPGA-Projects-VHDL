@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 14 22:04:50 2019
+# Process ID: 8548
+# Current directory: D:/DrexelStudy/ECE302/hw5draft
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10916 D:\DrexelStudy\ECE302\hw5draft\hw5draft.xpr
+# Log file: D:/DrexelStudy/ECE302/hw5draft/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/hw5draft\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/hw5draft/hw5draft.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source twosC_1bit.tcl
+restart
+add_force {/twosC_1bit/inv_in} -radix hex {0 0ns}
+add_force {/twosC_1bit/x} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+source twosC_1bit.tcl
+restart
+add_force {/twosC_1bit/x} -radix hex {0 0ns}
+add_force {/twosC_1bit/inv_in} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+add_force {/twosC_1bit/x} -radix hex {1 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+add_force {/twosC_1bit/x} -radix hex {0 0ns}
+run 100 ps
+add_force {/twosC_1bit/x} -radix hex {1 0ns}
+run 100 ps
+close_sim
+launch_simulation
+source twosC_1bit.tcl
+restart
+add_force {/twosC_1bit/x} -radix hex {0 0ns}
+add_force {/twosC_1bit/inv_in} -radix hex {0 0ns}
+add_force {/twosC_1bit/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+add_force {/twosC_1bit/x} -radix hex {1 0ns}
+run 100 ps
+add_force {/twosC_1bit/inv_in} -radix hex {1 0ns}
+add_force {/twosC_1bit/x} -radix hex {0 0ns}
+run 100 ps
+add_force {/twosC_1bit/x} -radix hex {1 0ns}
+run 100 ps
+close_sim

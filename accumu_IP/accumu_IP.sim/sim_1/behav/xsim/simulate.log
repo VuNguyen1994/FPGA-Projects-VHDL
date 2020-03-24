@@ -1,0 +1,21 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Failure: Done
+Time: 2250 ps  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd
+$finish called at time : 2250 ps : File "D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd" Line 114
+Error: incorrect
+Time: 300 ps  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd
+Error: incorrect
+Time: 400 ps  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd
+Error: incorrect
+Time: 500 ps  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd
+Error: incorrect
+Time: 600 ps  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd
+Error: incorrect
+Time: 700 ps  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd
+Error: incorrect
+Time: 800 ps  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd
+Error: incorrect
+Time: 900 ps  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd
+Error: incorrect
+Time: 1 ns  Iteration: 0  Process: /acc_tb/line__68  File: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.srcs/sources_1/new/acc_tb.vhd

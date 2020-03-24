@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../prelab3.srcs/sources_1/new/add3bits.vhd" \
+"../../../../prelab3.srcs/sources_1/new/serial_adder.vhd" \
+
+# Do not sort compile order
+nosort

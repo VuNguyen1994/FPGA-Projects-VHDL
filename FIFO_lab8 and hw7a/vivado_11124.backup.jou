@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 25 11:09:28 2019
+# Process ID: 11124
+# Current directory: D:/DrexelStudy/ECE302/FIFO_lab8 and hw7a
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9564 D:\DrexelStudy\ECE302\FIFO_lab8 and hw7a\FIFO_lab8.xpr
+# Log file: D:/DrexelStudy/ECE302/FIFO_lab8 and hw7a/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/FIFO_lab8 and hw7a\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/DrexelStudy/ECE302/FIFO_lab8 and hw7a/FIFO_lab8.xpr}
+update_compile_order -fileset sources_1

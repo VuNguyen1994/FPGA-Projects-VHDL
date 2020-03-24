@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 21 15:38:25 2019
+# Process ID: 1192
+# Current directory: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.runs/c_accum_0_synth_1
+# Command line: vivado.exe -log c_accum_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_accum_0.tcl
+# Log file: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.runs/c_accum_0_synth_1/c_accum_0.vds
+# Journal file: D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.runs/c_accum_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source c_accum_0.tcl -notrace

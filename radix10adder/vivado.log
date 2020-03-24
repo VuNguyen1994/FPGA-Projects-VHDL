@@ -1,0 +1,340 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec  6 14:57:27 2019
+# Process ID: 3348
+# Current directory: D:/DrexelStudy/ECE302/radix10adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5900 D:\DrexelStudy\ECE302\radix10adder\radix10adder.xpr
+# Log file: D:/DrexelStudy/ECE302/radix10adder/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/radix10adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/radix10adder/radix10adder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 698.863 ; gain = 46.605
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'radix_10_add' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj radix_10_add_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+"xelab -wto 05f22bfe1819495b824a0359f77a02c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot radix_10_add_behav xil_defaultlib.radix_10_add -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 05f22bfe1819495b824a0359f77a02c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot radix_10_add_behav xil_defaultlib.radix_10_add -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "radix_10_add_behav -key {Behavioral:sim_1:Functional:radix_10_add} -tclbatch {radix_10_add.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source radix_10_add.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 741.145 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'radix_10_add_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 741.145 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+add_force {/radix_10_add/y} -radix hex {0011 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '0011': Object size 4 does not match size of given value 0011.
+add_force {/radix_10_add/y} -radix bin {0011 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'radix_10_add' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj radix_10_add_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_10_add.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'radix_10_add'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+"xelab -wto 05f22bfe1819495b824a0359f77a02c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot radix_10_add_behav xil_defaultlib.radix_10_add -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 05f22bfe1819495b824a0359f77a02c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot radix_10_add_behav xil_defaultlib.radix_10_add -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.radix_10_add
+Built simulation snapshot radix_10_add_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "radix_10_add_behav -key {Behavioral:sim_1:Functional:radix_10_add} -tclbatch {radix_10_add.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source radix_10_add.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'radix_10_add_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 767.652 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+add_force {/radix_10_add/y} -radix bin {0011 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_5.vhd w ]
+add_files D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_5.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Fri Dec  6 15:23:28 2019] Launched synth_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Dec  6 15:24:28 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Dec  6 15:28:59 2019] Launched synth_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Dec  6 15:29:52 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec  6 15:31:28 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 791.184 ; gain = 3.340
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA11DAA
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1920.918 ; gain = 1129.734
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Dec  6 15:35:44 2019] Launched synth_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Dec  6 15:39:04 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec  6 15:40:36 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'radix5_adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj radix5_adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_10_add.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'radix_10_add'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'radix5_adder'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+"xelab -wto 05f22bfe1819495b824a0359f77a02c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot radix5_adder_behav xil_defaultlib.radix5_adder -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 05f22bfe1819495b824a0359f77a02c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot radix5_adder_behav xil_defaultlib.radix5_adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.radix_10_add [\radix_10_add(r=5,n=3)\]
+Compiling architecture struc of entity xil_defaultlib.radix5_adder
+Built simulation snapshot radix5_adder_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim/xsim.dir/radix5_adder_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 109.387 ; gain = 17.828
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  6 15:44:43 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1948.965 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DrexelStudy/ECE302/radix10adder/radix10adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "radix5_adder_behav -key {Behavioral:sim_1:Functional:radix5_adder} -tclbatch {radix5_adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source radix5_adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'radix5_adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 1958.512 ; gain = 9.547
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/radix5_adder/x} -radix bin {011 0ns}
+add_force {/radix5_adder/y} -radix bin {010 0ns}
+add_force {/radix5_adder/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix5_adder/btn0} -radix hex {0 0ns}
+add_force {/radix5_adder/btn1} -radix hex {1 0ns}
+add_force {/radix5_adder/reset} -radix hex {0 0ns}
+run 100 ps
+add_force {/radix5_adder/btn0} -radix hex {1 0ns}
+add_force {/radix5_adder/btn1} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+add_force {/radix5_adder/btn0} -radix hex {0 0ns}
+run 100 ps
+add_force {/radix5_adder/btn1} -radix hex {1 0ns}
+run 100 ps
+add_force {/radix5_adder/btn0} -radix hex {1 0ns}
+add_force {/radix5_adder/btn1} -radix hex {0 0ns}
+run 100 ps
+add_force {/radix5_adder/btn0} -radix hex {0 0ns}
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1962.145 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Dec  6 15:53:30 2019] Launched synth_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Dec  6 15:55:18 2019] Launched synth_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Dec  6 15:56:24 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec  6 15:58:05 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA11DAA
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 16:41:44 2019...

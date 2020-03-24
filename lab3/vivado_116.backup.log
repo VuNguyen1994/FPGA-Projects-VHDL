@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 15 19:59:26 2019
+# Process ID: 116
+# Current directory: D:/Drexel Study/ECE302/lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10092 D:\Drexel Study\ECE302\lab3\lab3.xpr
+# Log file: D:/Drexel Study/ECE302/lab3/vivado.log
+# Journal file: D:/Drexel Study/ECE302/lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Drexel Study/ECE302/lab3/lab3.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 688.559 ; gain = 68.648
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Tue Oct 15 20:15:52 2019] Launched synth_1...
+Run output will be captured here: D:/Drexel Study/ECE302/lab3/lab3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Tue Oct 15 20:59:37 2019] Launched impl_1...
+Run output will be captured here: D:/Drexel Study/ECE302/lab3/lab3.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 15 21:13:44 2019...

@@ -1,0 +1,3 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Drexel Study/ECE302/hw2/hw2.sim/sim_1/impl/func/xsim/count_00_tb_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'count_00'
+INFO: [VRFC 10-3107] analyzing entity 'count_00_tb'

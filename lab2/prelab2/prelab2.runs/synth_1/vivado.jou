@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Oct  4 14:35:52 2019
+# Process ID: 504
+# Current directory: D:/Drexel Study/ECE302/lab2/prelab2/prelab2.runs/synth_1
+# Command line: vivado.exe -log register4b.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source register4b.tcl
+# Log file: D:/Drexel Study/ECE302/lab2/prelab2/prelab2.runs/synth_1/register4b.vds
+# Journal file: D:/Drexel Study/ECE302/lab2/prelab2/prelab2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source register4b.tcl -notrace

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec  6 16:18:33 2019
+# Process ID: 6700
+# Current directory: D:/DrexelStudy/ECE302/accumu_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6112 D:\DrexelStudy\ECE302\accumu_IP\accumu_IP.xpr
+# Log file: D:/DrexelStudy/ECE302/accumu_IP/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/accumu_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 733.613 ; gain = 90.910
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 16:41:36 2019...

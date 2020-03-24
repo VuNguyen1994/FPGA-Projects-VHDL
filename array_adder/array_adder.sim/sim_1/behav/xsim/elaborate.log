@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f66d5de670fb4c73a49fd2b0930110f2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot array_adderr_behav xil_defaultlib.array_adderr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-923] index value <4> is out of range [3:0] of array <ci> [D:/DrexelStudy/ECE302/array_adder/array_adder.srcs/sources_1/new/array_adderr.vhd:61]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit array_adderr in library work failed.

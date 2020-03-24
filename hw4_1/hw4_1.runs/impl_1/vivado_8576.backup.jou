@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 28 10:45:29 2019
+# Process ID: 8576
+# Current directory: D:/DrexelStudy/ECE302/hw4_1/hw4_1.runs/impl_1
+# Command line: vivado.exe -log test_or_gate.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test_or_gate.tcl -notrace
+# Log file: D:/DrexelStudy/ECE302/hw4_1/hw4_1.runs/impl_1/test_or_gate.vdi
+# Journal file: D:/DrexelStudy/ECE302/hw4_1/hw4_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source test_or_gate.tcl -notrace

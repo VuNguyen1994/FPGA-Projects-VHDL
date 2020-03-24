@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 23 11:14:41 2019
+# Process ID: 2512
+# Current directory: D:/DrexelStudy/ECE302/reg_v1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2928 D:\DrexelStudy\ECE302\reg_v1\reg_v1.xpr
+# Log file: D:/DrexelStudy/ECE302/reg_v1/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/reg_v1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/reg_v1/reg_v1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 756.344 ; gain = 107.074
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Oct 23 11:17:32 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0EB8A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1873.680 ; gain = 1115.852
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/impl_1/reg_v1.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/impl_1/reg_v1.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Oct 23 11:28:42 2019] Launched synth_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Oct 23 11:29:43 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Oct 23 11:31:21 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Oct 23 11:36:03 2019] Launched synth_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Oct 23 11:37:09 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Oct 23 11:38:53 2019] Launched impl_1...
+Run output will be captured here: D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/reg_v1/reg_v1.runs/impl_1/reg_v1.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 12:31:21 2019...

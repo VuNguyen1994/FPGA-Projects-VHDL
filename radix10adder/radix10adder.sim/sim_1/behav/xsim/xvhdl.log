@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_10_add.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'radix_10_add'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'radix5_adder'

@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec  6 14:17:37 2019
+# Process ID: 1244
+# Current directory: D:/DrexelStudy/ECE302/radix10adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7908 D:\DrexelStudy\ECE302\radix10adder\radix10adder.xpr
+# Log file: D:/DrexelStudy/ECE302/radix10adder/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/radix10adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/radix10adder/radix10adder.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source radix_10_add.tcl
+restart
+add_force {/radix_10_add/x} -radix bin {0001 0ns}
+add_force {/radix_10_add/y} -radix hex {0101 0ns}
+add_force {/radix_10_add/y} -radix bin {0101 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+source radix_10_add.tcl
+restart
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+add_force {/radix_10_add/y} -radix bin {0001 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+add_force {/radix_10_add/y} -radix bin {0011 0ns}
+run 100 ps
+add_force {/radix_10_add/y} -radix bin {0101 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+source radix_10_add.tcl
+restart
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+add_force {/radix_10_add/y} -radix bin {0011 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+add_force {/radix_10_add/y} -radix bin {0001 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+source radix_10_add.tcl
+restart
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+add_force {/radix_10_add/y} -radix bin {0001 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+source radix_10_add.tcl
+restart
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+add_force {/radix_10_add/y} -radix bin {0011 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+add_force {/radix_10_add/y} -radix bin {0001 0ns}
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 21 13:58:45 2019
+# Process ID: 280
+# Current directory: D:/DrexelStudy/ECE302/FIFO_lab8 and hw7a/adder_Testbench/adder_Testbench.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/DrexelStudy/ECE302/FIFO_lab8 and hw7a/adder_Testbench/adder_Testbench.sim/sim_1/behav/xsim/xsim.dir/adder_test_bench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/DrexelStudy/ECE302/FIFO_lab8 and hw7a/adder_Testbench/adder_Testbench.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/DrexelStudy/ECE302/FIFO_lab8 and hw7a/adder_Testbench/adder_Testbench.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/DrexelStudy/ECE302/FIFO_lab8 -notrace
+couldn't read file "D:/DrexelStudy/ECE302/FIFO_lab8": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 21 13:58:45 2019...

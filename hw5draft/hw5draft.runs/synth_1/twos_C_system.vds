@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  1 01:35:46 2019
+# Process ID: 11632
+# Current directory: D:/DrexelStudy/ECE302/hw5draft/hw5draft.runs/synth_1
+# Command line: vivado.exe -log twos_C_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source twos_C_system.tcl
+# Log file: D:/DrexelStudy/ECE302/hw5draft/hw5draft.runs/synth_1/twos_C_system.vds
+# Journal file: D:/DrexelStudy/ECE302/hw5draft/hw5draft.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source twos_C_system.tcl -notrace
+Command: synth_design -top twos_C_system -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12392 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 700.285 ; gain = 177.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'twos_C_system' [D:/DrexelStudy/ECE302/hw5draft/hw5draft.srcs/sources_1/new/twosC.vhd:41]
+	Parameter n bound to: 4 - type: integer 
+ERROR: [Synth 8-561] range expression could not be resolved to a constant [D:/DrexelStudy/ECE302/hw5draft/hw5draft.srcs/sources_1/new/twosC.vhd:76]
+ERROR: [Synth 8-285] failed synthesizing module 'twos_C_system' [D:/DrexelStudy/ECE302/hw5draft/hw5draft.srcs/sources_1/new/twosC.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 763.199 ; gain = 240.555
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 01:36:03 2019...

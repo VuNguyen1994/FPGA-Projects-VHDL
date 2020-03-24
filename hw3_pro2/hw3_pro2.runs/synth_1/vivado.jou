@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 23 10:28:28 2019
+# Process ID: 9696
+# Current directory: D:/DrexelStudy/ECE302/hw3_pro2/hw3_pro2.runs/synth_1
+# Command line: vivado.exe -log blink.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blink.tcl
+# Log file: D:/DrexelStudy/ECE302/hw3_pro2/hw3_pro2.runs/synth_1/blink.vds
+# Journal file: D:/DrexelStudy/ECE302/hw3_pro2/hw3_pro2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source blink.tcl -notrace

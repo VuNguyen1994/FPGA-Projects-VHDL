@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec  6 14:57:27 2019
+# Process ID: 3348
+# Current directory: D:/DrexelStudy/ECE302/radix10adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5900 D:\DrexelStudy\ECE302\radix10adder\radix10adder.xpr
+# Log file: D:/DrexelStudy/ECE302/radix10adder/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/radix10adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/radix10adder/radix10adder.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source radix_10_add.tcl
+restart
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+add_force {/radix_10_add/y} -radix hex {0011 0ns}
+add_force {/radix_10_add/y} -radix bin {0011 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+source radix_10_add.tcl
+restart
+add_force {/radix_10_add/x} -radix bin {0101 0ns}
+add_force {/radix_10_add/y} -radix bin {0011 0ns}
+add_force {/radix_10_add/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix_10_add/reset} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+close [ open D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_5.vhd w ]
+add_files D:/DrexelStudy/ECE302/radix10adder/radix10adder.srcs/sources_1/new/radix_5.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+launch_simulation
+source radix5_adder.tcl
+restart
+add_force {/radix5_adder/x} -radix bin {011 0ns}
+add_force {/radix5_adder/y} -radix bin {010 0ns}
+add_force {/radix5_adder/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/radix5_adder/btn0} -radix hex {0 0ns}
+add_force {/radix5_adder/btn1} -radix hex {1 0ns}
+add_force {/radix5_adder/reset} -radix hex {0 0ns}
+run 100 ps
+add_force {/radix5_adder/btn0} -radix hex {1 0ns}
+add_force {/radix5_adder/btn1} -radix hex {0 0ns}
+run 100 ps
+run 100 ps
+add_force {/radix5_adder/btn0} -radix hex {0 0ns}
+run 100 ps
+add_force {/radix5_adder/btn1} -radix hex {1 0ns}
+run 100 ps
+add_force {/radix5_adder/btn0} -radix hex {1 0ns}
+add_force {/radix5_adder/btn1} -radix hex {0 0ns}
+run 100 ps
+add_force {/radix5_adder/btn0} -radix hex {0 0ns}
+run 100 ps
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/radix10adder/radix10adder.runs/impl_1/radix5_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw

@@ -1,0 +1,1 @@
+-wto "f3511893da324e79b2c7791526f20248" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "twosCarray_behav" "xil_defaultlib.twosCarray" -log "elaborate.log" 

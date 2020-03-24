@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 14 22:00:21 2019
+# Process ID: 10496
+# Current directory: D:/DrexelStudy/ECE302/hw6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9072 D:\DrexelStudy\ECE302\hw6\hw6.xpr
+# Log file: D:/DrexelStudy/ECE302/hw6/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/hw6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/hw6/hw6.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source twosCarray.tcl
+restart
+add_force {/twosCarray/x} -radix bin {10101000 0ns}
+add_force {/twosCarray/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+source twosCarray.tcl
+restart
+add_force {/twosCarray/x} -radix bin {10101000 0ns}
+add_force {/twosCarray/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+source twosCarray.tcl
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+restart
+add_force {/twosCarray/ck} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+add_force {/twosCarray/x} -radix bin {10101000 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_sim
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/hw6/hw6.runs/impl_1/twosCarray.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/DrexelStudy/ECE302/hw6/hw6.runs/impl_1/twosCarray.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw

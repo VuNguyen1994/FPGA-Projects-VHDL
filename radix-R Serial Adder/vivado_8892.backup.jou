@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec  6 13:30:36 2019
+# Process ID: 8892
+# Current directory: D:/DrexelStudy/ECE302/radix-R Serial Adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5548 D:\DrexelStudy\ECE302\radix-R Serial Adder\radix-R Serial Adder.xpr
+# Log file: D:/DrexelStudy/ECE302/radix-R Serial Adder/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/radix-R Serial Adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/DrexelStudy/ECE302/radix-R Serial Adder/radix-R Serial Adder.xpr}
+update_compile_order -fileset sources_1

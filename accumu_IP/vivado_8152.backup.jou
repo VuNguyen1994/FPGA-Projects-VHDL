@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 22 16:14:26 2019
+# Process ID: 8152
+# Current directory: D:/DrexelStudy/ECE302/accumu_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12436 D:\DrexelStudy\ECE302\accumu_IP\accumu_IP.xpr
+# Log file: D:/DrexelStudy/ECE302/accumu_IP/vivado.log
+# Journal file: D:/DrexelStudy/ECE302/accumu_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DrexelStudy/ECE302/accumu_IP/accumu_IP.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source acc_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+source acc_tb.tcl
+close_sim

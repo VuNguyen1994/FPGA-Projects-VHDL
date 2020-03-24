@@ -1,0 +1,7 @@
+Running: xsim.dir/array_adderr_behav/xsimk.exe -simmode gui -wdb array_adderr_behav.wdb -simrunnum 0 -socket 53019
+Design successfully loaded
+Design Loading Memory Usage: 5736 KB (Peak: 5736 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 6468 KB (Peak: 6468 KB)
+Simulation CPU Usage: 156 ms
